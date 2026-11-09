@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="SocialNetwork.Content.Api/SocialNetwork.Content.Api.csproj" />
+  <Project Path="SocialNetwork.Content.Contracts/SocialNetwork.Content.Contracts.csproj" Id="fcc970b9-09a6-4f26-aa82-bb842e8aca25" />
   <Project Path="SocialNetwork.Content.Entities/SocialNetwork.Content.Entities.csproj" />
   <Project Path="SocialNetwork.Content.IntegrationTests/SocialNetwork.Content.IntegrationTests.csproj" />
   <Project Path="SocialNetwork.Content.Repositories/SocialNetwork.Content.Repositories.csproj" />
