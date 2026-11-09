@@ -35,6 +35,7 @@ public class PostRepository : BaseRepository<Post>, IPostRepository
         if (post is not null)
         {
             post.IsDeleted = true;
+            post.UpdatedAt = DateTime.UtcNow;
         }
     }
 }

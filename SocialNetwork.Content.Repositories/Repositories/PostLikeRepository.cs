@@ -13,6 +13,10 @@ public class PostLikeRepository
     {
     }
 
+    public override Task<PostLike?> GetByIdAsync(Guid id)
+        => throw new NotSupportedException(
+            "PostLike has a composite key (PostId, UserId); use IsLikedByUserAsync or the composite-key methods instead.");
+
     public async Task<List<PostLike>> GetLikesByPostIdAsync(Guid postId)
     {
         return await _dbSet

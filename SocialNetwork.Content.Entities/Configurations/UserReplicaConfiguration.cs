@@ -11,6 +11,7 @@ public class UserReplicaConfiguration : IEntityTypeConfiguration<UserReplica>
         builder.HasKey(u => u.UserId);
 
         builder.Property(u => u.UserId)
+            .ValueGeneratedNever()
             .IsRequired();
 
         builder.Property(u => u.IsActive)

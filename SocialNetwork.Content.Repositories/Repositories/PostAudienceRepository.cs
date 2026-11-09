@@ -13,6 +13,10 @@ public class PostAudienceRepository
     {
     }
 
+    public override Task<PostAudience?> GetByIdAsync(Guid id)
+        => throw new NotSupportedException(
+            "PostAudience has a composite key (PostId, UserId); use GetAudienceByPostIdAsync or the composite-key methods instead.");
+
     public async Task<List<PostAudience>> GetAudienceByPostIdAsync(Guid postId)
     {
         return await _dbSet
