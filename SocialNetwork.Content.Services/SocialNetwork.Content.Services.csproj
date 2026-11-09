@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SocialNetwork.Content.Entities\SocialNetwork.Content.Entities.csproj" />
+    <ProjectReference Include="..\SocialNetwork.Content.Repositories\SocialNetwork.Content.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
